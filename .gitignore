@@ -1,0 +1,5 @@
+.git*.old
+flake.lock
+
+#/homes/foo/config/quickshell/.qmlls.ini
+**/.qmlls.ini
