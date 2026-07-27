@@ -6,7 +6,6 @@
 - modules/ contains modules, programs, etc.
 
 **TODO** 
-- dotfile tracking with hjem
 - maybe some impernamence / preservation
 - disko?
 
