@@ -27,9 +27,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gaming.url = "github:fufexan/nix-gaming";
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 }

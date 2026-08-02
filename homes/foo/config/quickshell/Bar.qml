@@ -13,9 +13,9 @@ PanelWindow {
     }
     RowLayout {
         anchors.fill: parent
+        anchors.verticalCenter: parent.verticalCenter
         spacing: 5
         Layout.preferredHeight: parent.height
-        Clock {}
     }
     Row {
         spacing: 5

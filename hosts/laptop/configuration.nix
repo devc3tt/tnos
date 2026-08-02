@@ -6,7 +6,9 @@
   inputs,
   lib,
   ...
-}: {
+}: let
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+in {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -81,6 +83,15 @@
 
   # steam
   programs.steam.enable = true;
+
+  # spicetify for spotify
+  programs.spicetify = {
+    enable = true;
+    enabledExtensions = with spicePkgs.extensions; [
+      adblockify
+      hidePodcasts
+    ];
+  };
 
   # localsend
   programs.localsend.enable = true;
@@ -173,6 +184,7 @@
     # Gaming
     protonplus
     inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-lazer-bin
+    lutris-free
 
     # lsp, for when I quickly want to edit nix
     nixd
@@ -224,7 +236,7 @@
     settings = {
       default_session = {
         user = "foo";
-        command = "${pkgs.greetd}/bin/agreety --cmd mango";
+        command = "${pkgs.greetd}/bin/agreety --cmd start-hyprland";
       };
     };
   };
@@ -241,9 +253,6 @@
     enable = true;
     xwayland.enable = true;
   };
-
-  # Enable mango
-  programs.mango.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

@@ -5,8 +5,8 @@
       modules = [
         inputs.hjem.nixosModules.default
         inputs.nvf.nixosModules.default
-        inputs.mangowm.nixosModules.mango
         inputs.cade.nixosModules.default
+        inputs.spicetify-nix.nixosModules.spicetify
         ./laptop
       ];
     };
