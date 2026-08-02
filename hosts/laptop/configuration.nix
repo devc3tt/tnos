@@ -184,7 +184,6 @@ in {
     # Gaming
     protonplus
     inputs.nix-gaming.packages.${pkgs.stdenv.hostPlatform.system}.osu-lazer-bin
-    lutris-free
 
     # lsp, for when I quickly want to edit nix
     nixd
