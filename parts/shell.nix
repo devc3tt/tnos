@@ -16,6 +16,8 @@
           extensions = ["rust-analyzer"];
         })
         pkgs.bun
+        pkgs.pnpm
+        pkgs.nodejs
       ];
     };
   };
