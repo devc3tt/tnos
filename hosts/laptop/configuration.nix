@@ -81,6 +81,9 @@ in {
     ];
   };
 
+  # flatpak
+  services.flatpak.enable = true;
+
   # steam
   programs.steam.enable = true;
 
