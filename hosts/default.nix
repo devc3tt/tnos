@@ -8,8 +8,8 @@
         inputs.cade.nixosModules.default
         inputs.spicetify-nix.nixosModules.spicetify
 
-        /../homes/foo
-        /../modules/extra
+        ./../homes/foo
+        ./../modules/extra
 
         ./laptop/configuration.nix
       ];
