@@ -7,7 +7,11 @@
         inputs.nvf.nixosModules.default
         inputs.cade.nixosModules.default
         inputs.spicetify-nix.nixosModules.spicetify
-        ./laptop
+
+        /../homes/foo
+        /../modules/extra
+
+        ./laptop/configuration.nix
       ];
     };
   };

@@ -20,7 +20,6 @@
           nix.enable = true;
           qml.enable = true;
         };
-        #autocomplete.nvim-cmp.enable = true;
         autocomplete.blink-cmp.enable = true;
         autopairs.nvim-autopairs.enable = true;
 
