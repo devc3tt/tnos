@@ -5,10 +5,6 @@
 - hosts/ contains all of the host folders
 - modules/ contains modules, programs, etc.
 
-**TODO** 
-- maybe some impernamence / preservation
-- disko?
-
 I'd also like to thank following people for support, creation of tools and other things.
 - [@NotAShelf](https://github.com/notashelf)
 - [@rysieko](https://tangled.org/rysieko.pl/nixossmth)
