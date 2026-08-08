@@ -1,4 +1,4 @@
-{ ... }: {
+{
   imports = [
     # systems for perSystem
     ./systems.nix

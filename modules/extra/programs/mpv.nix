@@ -1,8 +1,9 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   environment.systemPackages = [
-    ( pkgs.mpv.override {
+    (
+      pkgs.mpv.override {
         scripts = [
+          # mpv-mpris
           pkgs.mpvScripts.mpris
         ];
       }
