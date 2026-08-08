@@ -1,6 +1,5 @@
 {
   imports = [
     ./hjem.nix
-    ./config
   ];
 }

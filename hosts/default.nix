@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  self,
+  inputs,
+  ...
+}: {
   flake.nixosConfigurations = {
     laptop = inputs.nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
@@ -8,8 +12,8 @@
         inputs.cade.nixosModules.default
         inputs.spicetify-nix.nixosModules.spicetify
 
-        ./../homes/foo
-        ./../modules/extra
+        "${self}/homes/foo/"
+        "${self}/modules/extra/"
 
         ./laptop/configuration.nix
       ];
