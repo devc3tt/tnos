@@ -25,8 +25,16 @@
 
         telescope.enable = true;
 
+        binds.whichKey.enable = true;
+
         ui = {
           colorizer.enable = true;
+        };
+
+        statusline = {
+          lualine = {
+            enable = true;
+          };
         };
       };
     };
