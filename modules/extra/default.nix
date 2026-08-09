@@ -1,6 +1,7 @@
 {
   imports = [
-    ./programs
-    ./config
+    ./nvf.nix
+    ./qtengine.nix
+    ./mpv.nix
   ];
 }
