@@ -1,4 +1,7 @@
 {lib, ...}: {
+  imports = [
+    (lib.mkAliasOptionModule ["hj"] ["hjem" "users" "foo"])
+  ];
   hjem = {
     users.foo = {
       enable = true;
@@ -7,7 +10,6 @@
 
       files = {
         # configs with folders
-        ".config/foot".source = ./config/foot;
         ".config/mango".source = ./config/mango;
         ".config/quickshell".source = ./config/quickshell;
 
