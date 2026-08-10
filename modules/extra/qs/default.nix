@@ -1,4 +1,3 @@
 {
-  #hj.xdg.config.files."quickshell" = ./quickshell;
-  hj.files.".config/quickshell" = ./quickshell;
+  hj.xdg.config.files."quickshell".source = ./quickshell;
 }
