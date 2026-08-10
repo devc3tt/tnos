@@ -8,5 +8,6 @@
     ./mpv.nix
     ./foot.nix
     ./spotify.nix
+    ./fuzzel.nix
   ];
 }

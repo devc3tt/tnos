@@ -23,6 +23,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     cade.url = "github:manic-systems/cade";
+    hjem-impure = {
+      url = "github:Rexcrazy804/hjem-impure";
+      inputs.nixpkgs.follows = "";
+      inputs.hjem.follows = "";
+    };
     nvf = {
       url = "github:NotAShelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";

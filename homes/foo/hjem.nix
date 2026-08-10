@@ -1,22 +1,18 @@
-{lib, ...}: {
+{
+  lib,
+  inputs,
+  ...
+}: {
   imports = [
     (lib.mkAliasOptionModule ["hj"] ["hjem" "users" "foo"])
   ];
+  hjem.extraModules = [inputs.hjem-impure.hjemModules.default];
   hj = {
     enable = true;
     user = "foo";
     directory = "/home/foo";
 
-    files = {
-      # configs with files
-      ".config/fuzzel/fuzzel.ini" = {
-        generator = lib.generators.toINI {};
-        value = {
-          main = {
-            font = "JetbrainsMono Nerd Font:size=10";
-          };
-        };
-      };
-    };
+    # hjem-impure
+    impure.enable = true;
   };
 }
