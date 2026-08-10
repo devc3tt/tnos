@@ -4,11 +4,8 @@
 {
   pkgs,
   inputs,
-  lib,
   ...
-}: let
-  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
-in {
+}: {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
@@ -86,15 +83,6 @@ in {
 
   # steam
   programs.steam.enable = true;
-
-  # spicetify for spotify
-  programs.spicetify = {
-    enable = true;
-    enabledExtensions = with spicePkgs.extensions; [
-      adblockify
-      hidePodcasts
-    ];
-  };
 
   # localsend
   programs.localsend.enable = true;
