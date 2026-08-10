@@ -1,6 +1,7 @@
 {
   imports = [
     ./qs
+    ./mango
 
     ./nvf.nix
     ./qtengine.nix
