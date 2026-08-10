@@ -11,7 +11,6 @@
       files = {
         # configs with folders
         ".config/mango".source = ./config/mango;
-        ".config/quickshell".source = ./config/quickshell;
 
         # configs with files
         ".config/fuzzel/fuzzel.ini" = {
